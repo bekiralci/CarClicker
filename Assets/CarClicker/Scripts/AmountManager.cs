@@ -4,15 +4,36 @@ using UnityEngine;
 
 public class AmountManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public float _totalAmount;
+
+    public void Add(float value)
     {
-        
+        _totalAmount += value;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Remove(float value)
     {
-        
+        _totalAmount -= value;
     }
+
+    AmountManager GetAmountManager()
+    {
+        return this;
+    }
+
+    #region Enable/Disable/Event
+
+    private void OnEnable()
+    {
+        EventManager.E_AmountManager += GetAmountManager;
+    }
+
+    private void OnDisable()
+    {
+        EventManager.E_AmountManager -= GetAmountManager;
+    }
+
+    #endregion
+
 }
