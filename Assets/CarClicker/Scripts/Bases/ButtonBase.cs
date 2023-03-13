@@ -12,7 +12,6 @@ public abstract class ButtonBase : MonoBehaviour
     [SerializeField] private float factor;
 
     [Header("Buttons/Sprites")]
-    public GameObject base_Button;
     public GameObject main_Button;
     public GameObject passive_Button;
 

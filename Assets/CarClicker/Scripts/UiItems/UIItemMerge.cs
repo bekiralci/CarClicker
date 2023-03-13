@@ -65,25 +65,4 @@ public class UIItemMerge : ButtonBase
         }
     }
 
-
-    //public void MergeBTNControl()
-    //{
-    //    if (CharNumControl(EventManager.E_CarsManager.Invoke().currentCars) && EventManager.E_AmountManager.Invoke().AmountCheck(upgradeCost))
-    //    {
-
-    //        MergeBTN_base.SetActive(true);
-    //        MergeBTN.SetActive(true);
-    //        MergeBTN_passive.SetActive(false);
-    //    }
-    //    else if (CharNumControl(EventManager.E_CarsManager.Invoke().currentCars) && !EventManager.E_AmountManager.Invoke().AmountCheck(upgradeCost))
-    //    {
-    //        MergeBTN_base.SetActive(true);
-    //        MergeBTN.SetActive(false);
-    //        MergeBTN_passive.SetActive(true);
-    //    }
-    //    else
-    //    {
-    //        MergeBTN_base.SetActive(false);
-    //    }
-    //}
 }
